@@ -152,14 +152,14 @@ body h1 {
 
 @media (max-width: 600px) {
     .container {
-        width: 80vw;
+        width: 90vw;
     }
 
     .create {
-        width: 70vw;
+        width: 80vw;
     }
 
-    .create .taskNameInput{
-        width: 70vw;
+    .create .taskNameInput, .list .task{
+        width: 80vw;
     }
 }
