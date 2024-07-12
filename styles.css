@@ -14,9 +14,13 @@ body {
 body h1 {
     margin-top: 40px;
     font-size: 2.5rem;
+    color: #333333;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 40px 0;
     padding: 30px;
     background-color: #666666;
@@ -144,4 +148,18 @@ body h1 {
 
 .list .task .delete:hover {
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 80vw;
+    }
+
+    .create {
+        width: 70vw;
+    }
+
+    .create .taskNameInput{
+        width: 70vw;
+    }
 }
