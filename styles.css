@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    margin: 50px 0;
+    padding: 30px;
+    background-color: #666666;
+    border-radius: 15px;
+    min-height: 70vh;
+}
+
+.nav {
+    padding: 10px;
+    width: 50vw;
+    font-size: 1.2em;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2vw;
+    margin: 0 0 35px 0;
+}
+
+.nav li a {
+    width: 8vw;
+    border-radius: 10px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    opacity: 0.4;
+}
+
+.nav li a.active {
+    opacity: 1;
+}
+
+.nav li a:hover {
+    color: #000;
+}
+
+.nav li:first-of-type a {
+    background-color: rgb(232, 30, 30);
+}
+
+.nav li:last-of-type a {
+    background-color: rgb(18, 123, 18);
+}
+
+.create {
+    position: relative;
+    margin-bottom: 35px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+.create .taskNameInput {
+    width: 50vw;
+    background-color: #eee;
+    border: none;
+    padding: 10.8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+.create .addTaskBtn {
+    display: flex;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    background-color: #77838a;
+    border-radius: 10px;
+    padding: 10px;
+    align-self: center;
+}
+
+.create .addTaskBtn:hover {
+    cursor: pointer;
+}
+
+.list {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.list .task {
+    position: relative;
+    background-color: #eee;
+    padding: 10.8px;
+    font-size: 1.2rem;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.list .task input[type="checkbox"] {
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin-left: 15px;
+}
+
+.list .task .edit {
+    cursor: pointer;
+    position: absolute;
+    right: 43px;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(94, 152, 166);
+}
+
+.list .task .delete {
+    display: flex;
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    background-color: rgb(232, 30, 30);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.list .task .delete:hover {
+    cursor: pointer;
+}

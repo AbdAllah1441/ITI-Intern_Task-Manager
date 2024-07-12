@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <ul class="nav">
+            <li><a class="active" href="index.html">To Do</a></li>
+            <li><a href="finished.html">Finished</a></li>
+        </ul>
+    
+        <form onsubmit="return addTask(event)" class="create">
+            <input class="taskNameInput" id="add" type="text" placeholder="Add a new task">
+            <button class="addTaskBtn" type="submit">
+                <img width="24px" src="https://www.svgrepo.com/show/2087/plus.svg" alt="add">
+            </button>
+        </form>
+    
+        <div id="todolist" class="list">
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
