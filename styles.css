@@ -159,7 +159,11 @@ body h1 {
         width: 80vw;
     }
 
-    .create .taskNameInput, .list .task{
+    .create .taskNameInput{
+        width: 80vw;
+    }
+
+    .list .task {
         width: 80vw;
     }
 }
