@@ -115,3 +115,15 @@ function editTask (id, name, tasksArrayId, index) {
     else
         document.getElementById(id).innerHTML = name;
 }
+
+let obj = function (nm) {
+    this.name = nm;
+    this.prntNm();
+}
+
+obj.prototype.prntNm = function () {
+    console.log(this.name);
+}
+
+let o1 = new obj("Ali");
+

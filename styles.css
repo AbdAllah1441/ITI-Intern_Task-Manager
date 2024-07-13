@@ -151,6 +151,11 @@ body h1 {
 }
 
 @media (max-width: 600px) {
+    .nav {
+        width: 90vw;
+        justify-content: space-evenly;
+    }
+
     .container {
         width: 90vw;
     }
